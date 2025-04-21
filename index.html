@@ -11,11 +11,14 @@
   <p>Sube dos fotos: una de frente y otra de perfil.</p>
 
   <input type="file" id="front-input" accept="image/*"><br>
+  <img id="front-preview" style="max-width: 300px;"><br><br>
+
   <input type="file" id="side-input" accept="image/*"><br>
+  <img id="side-preview" style="max-width: 300px;"><br><br>
 
-  <canvas id="output-canvas" width="640" height="480"></canvas>
+  <canvas id="output-canvas" width="640" height="480" style="border: 1px solid black;"></canvas>
 
-  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/face_mesh/face_mesh.js"></script>
   <script src="script.js"></script>
 </body>
+
 </html>
