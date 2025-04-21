@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Visagismo AI</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Visagismo con IA</h1>
+  <p>Sube dos fotos: una de frente y otra de perfil.</p>
+
+  <input type="file" id="front-input" accept="image/*"><br>
+  <input type="file" id="side-input" accept="image/*"><br>
+
+  <canvas id="output-canvas" width="640" height="480"></canvas>
+
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/face_mesh/face_mesh.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
