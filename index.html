@@ -10,20 +10,16 @@
   <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/face-landmarks-detection"></script>
 </head>
 <body>
-  <h1>Visagismo con IA</h1>
-  <p>Sube dos fotos: una de frente y otra de perfil.</p>
-
   <h2>Frontal</h2>
-  <input type="file" id="front-input" accept="image/*"><br>
-  <img id="front-preview" style="max-width: 100%; display: block; margin-bottom: 10px;">
-  <canvas id="front-canvas" width="640" height="480" style="border: 1px solid black;"></canvas>
+<input type="file" id="front-input" accept="image/*"><br>
+<img id="front-preview" style="max-width: 300px; display: block; margin: 10px 0;">
+<canvas id="front-canvas" width="640" height="480" style="border: 1px solid black;"></canvas>
 
-  <h2>Perfil</h2>
-  <input type="file" id="side-input" accept="image/*"><br>
-  <img id="side-preview" style="max-width: 100%; display: block; margin-bottom: 10px;">
-  <canvas id="side-canvas" width="640" height="480" style="border: 1px solid black;"></canvas>
+<h2>Perfil</h2>
+<input type="file" id="side-input" accept="image/*"><br>
+<img id="side-preview" style="max-width: 300px; display: block; margin: 10px 0;">
+<canvas id="side-canvas" width="640" height="480" style="border: 1px solid black;"></canvas>
 
-  <script src="script.js"></script>
 </body>
 
 
