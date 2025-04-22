@@ -13,19 +13,18 @@
   <h1>Visagismo con IA</h1>
   <p>Sube dos fotos: una de frente y otra de perfil.</p>
 
+  <h2>Frontal</h2>
   <input type="file" id="front-input" accept="image/*"><br>
-  <img id="front-preview" style="max-width: 300px;"><br><br>
+  <img id="front-preview" style="display:none;">
+  <canvas id="front-canvas" width="640" height="480" style="border: 1px solid black;"></canvas>
 
+  <h2>Perfil</h2>
   <input type="file" id="side-input" accept="image/*"><br>
-  <img id="side-preview" style="max-width: 300px;"><br><br>
-
-  <canvas id="output-canvas" width="640" height="480" style="border: 1px solid black;"></canvas>
+  <img id="side-preview" style="display:none;">
+  <canvas id="side-canvas" width="640" height="480" style="border: 1px solid black;"></canvas>
 
   <script src="script.js"></script>
-  <input type="file" id="front-input" accept="image/*">
-<img id="front-preview" style="display:none;">
-<canvas id="output-canvas" width="640" height="480" style="border:1px solid black;"></canvas>
-
 </body>
+
 
 </html>

@@ -23,6 +23,7 @@ function handleImageUpload(inputId, imgId, canvasId) {
       img.onload = async () => {
         canvas.width = img.width;
         canvas.height = img.height;
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
         ctx.drawImage(img, 0, 0, img.width, img.height);
 
         const predictions = await model.estimateFaces({
@@ -33,21 +34,4 @@ function handleImageUpload(inputId, imgId, canvasId) {
 
         if (predictions.length > 0) {
           predictions.forEach(prediction => {
-            const keypoints = prediction.keypoints;
-            ctx.strokeStyle = "red";
-            ctx.lineWidth = 2;
-            keypoints.forEach(point => {
-              ctx.beginPath();
-              ctx.arc(point.x, point.y, 1, 0, 2 * Math.PI);
-              ctx.stroke();
-            });
-          });
-        } else {
-          alert("No se detectó rostro.");
-        }
-      };
-    }
-  });
-}
-
-handleImageUpload("front-input", "front-preview", "output-canvas");
+            const keypoints
