@@ -1,10 +1,83 @@
+/* Estilo general */
 body {
-    font-family: Arial, sans-serif;
-    padding: 20px;
-    text-align: center;
-  }
-  canvas {
-    border: 1px solid #ccc;
-    margin-top: 20px;
-  }
-  
+  font-family: 'Segoe UI', sans-serif;
+  background: #f3f8fa;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+header {
+  background-color: #00698f;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.label-titulo {
+  display: block;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  color: #00698f;
+}
+
+input[type="file"] {
+  margin-bottom: 15px;
+  padding: 5px;
+}
+
+canvas {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 30px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: #f9f9f9;
+}
+
+button {
+  background-color: #00698f;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #004f6b;
+}
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  background: #e9f2f6;
+  color: #555;
+  font-size: 14px;
+}
+
+/* Animación de entrada */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}

@@ -5,22 +5,35 @@
   <title>Visagismo AI</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-core"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-converter"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/face-landmarks-detection"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
-  <h2>Frontal</h2>
-<input type="file" id="front-input" accept="image/*"><br>
-<img id="front-preview" style="max-width: 300px; display: block; margin: 10px 0;">
-<canvas id="front-canvas" width="640" height="480" style="border: 1px solid black;"></canvas>
 
-<h2>Perfil</h2>
-<input type="file" id="side-input" accept="image/*"><br>
-<img id="side-preview" style="max-width: 300px; display: block; margin: 10px 0;">
-<canvas id="side-canvas" width="640" height="480" style="border: 1px solid black;"></canvas>
+  <header>
+    <h1><span class="material-icons" style="vertical-align: middle;">visibility</span> Asistente Visagista Óptico</h1>
+  </header>
 
+  <div class="container">
+    <p>Sube dos fotos: una de frente y otra de perfil.</p>
+
+    <label class="label-titulo">Imagen Frontal:</label>
+    <input type="file" id="front-input" accept="image/*">
+    <canvas id="front-canvas" width="640" height="480"></canvas>
+
+    <label class="label-titulo">Imagen de Perfil:</label>
+    <input type="file" id="side-input" accept="image/*">
+    <canvas id="side-canvas" width="640" height="480"></canvas>
+
+    <button id="export-btn">Exportar Datos</button>
+  </div>
+
+  <div class="footer">
+    &copy; 2025 Óptica Inteligente · Visagismo AI
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/face_mesh/face_mesh.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js"></script>
+  <script src="script.js"></script>
 </body>
-
-
 </html>

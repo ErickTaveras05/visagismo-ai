@@ -1,0 +1,31 @@
+[
+  { "features": [180, 140, 130], "label": "Ovalado" },
+  { "features": [175, 135, 125], "label": "Ovalado" },
+  { "features": [178, 137, 126], "label": "Ovalado" },
+  { "features": [176, 134, 124], "label": "Ovalado" },
+  { "features": [179, 138, 127], "label": "Ovalado" },
+
+  { "features": [160, 150, 148], "label": "Cuadrado" },
+  { "features": [162, 152, 150], "label": "Cuadrado" },
+  { "features": [161, 151, 149], "label": "Cuadrado" },
+  { "features": [163, 153, 151], "label": "Cuadrado" },
+  { "features": [159, 149, 147], "label": "Cuadrado" },
+
+  { "features": [150, 160, 140], "label": "Redondo" },
+  { "features": [148, 158, 139], "label": "Redondo" },
+  { "features": [151, 161, 141], "label": "Redondo" },
+  { "features": [149, 159, 140], "label": "Redondo" },
+  { "features": [152, 162, 142], "label": "Redondo" },
+
+  { "features": [160, 145, 130], "label": "Corazón" },
+  { "features": [158, 143, 128], "label": "Corazón" },
+  { "features": [159, 144, 129], "label": "Corazón" },
+  { "features": [161, 146, 131], "label": "Corazón" },
+  { "features": [162, 147, 132], "label": "Corazón" },
+
+  { "features": [200, 130, 110], "label": "Oblongado" },
+  { "features": [198, 128, 108], "label": "Oblongado" },
+  { "features": [201, 131, 109], "label": "Oblongado" },
+  { "features": [199, 129, 111], "label": "Oblongado" },
+  { "features": [202, 132, 112], "label": "Oblongado" }
+]
